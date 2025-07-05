@@ -1,0 +1,1 @@
+# goshop-storage-service
