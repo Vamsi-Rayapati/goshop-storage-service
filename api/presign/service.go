@@ -2,6 +2,7 @@ package presign
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/smartbot/storage/pkg/aws"
 	"github.com/smartbot/storage/pkg/config"
@@ -43,6 +44,7 @@ func (as *PresignService) GetDownloadPreSignedUrl(request DownloadSignedUrlReque
 	}
 
 	url, err := aws.GetSignedUrl(bucket, request.FilePath)
+	log.Println("GetDownloadPreSignedUrl", url)
 
 	if err != nil {
 		return nil, err

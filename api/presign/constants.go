@@ -1,6 +1,6 @@
 package presign
 
 var BucketMap = map[string]string{
-	"avatar":  "goshop-avatar",
-	"product": "goshop-product",
+	"avatar":  "goshop-project",
+	"product": "goshop-project",
 }
